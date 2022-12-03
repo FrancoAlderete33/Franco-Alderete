@@ -1,0 +1,93 @@
+body {
+  background: lightgrey;
+}
+
+:root {
+  --main-color: white;
+}
+
+nav {
+  /*border: 2px solid crimson;*/
+  background-color: rgba(0, 0, 0, 0.925);
+   
+  
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+ 
+  
+}
+
+.main-menu__list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  gap: 2rem;
+  /*border: 2px solid crimson;*/
+  padding: 10px;
+  box-shadow: 2px 4px crimson;
+  border-radius: 10px;
+  
+}
+
+.main-menu__link{
+  color: white;
+  text-decoration: none;
+  font-family: 'Rubik Mono One', sans-serif;
+  text-shadow: #FC0 1px 0 10px;
+}
+
+
+
+
+
+/*background y refran*/
+
+.bg {
+  text-align: center;
+  padding: 10px;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+
+  /* modo flexbox*/
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  /* modo flexbox*/
+
+  /* Blur efect
+  filter: blur(8px);
+   Blur efect*/
+
+}
+
+.bg-text {
+  color: var(--main-color);
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: bold;
+ 
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index:2;
+  width:80%;
+  padding: 20px;
+  text-align: center;
+  opacity: 85%;
+  text-shadow: #FC0 1px 0 10px;
+  
+}
+
+.home{
+  background-image: url("/mi-portfolio/assets/bg-portfolio.jpg");
+}
