@@ -1,30 +1,32 @@
 /*Generales*/
 body {
-  background: lightgrey;
+  background: rgb(2,2,3);
+  background: linear-gradient(180deg, rgba(2,2,3,1) 79%, rgba(13,176,219,0.927608543417367) 100%);
+  letter-spacing: 1.5px;
+  /*border: 2px solid crimson;*/
 }
 
-:root {
-  --main-color: white;
-}
 
 nav {
-  /*border: 2px solid crimson;*/
+  font-size: 60%;
   background-color: rgba(0, 0, 0, 0.925); 
 }
 
  h2, h3 {
-  color: black;
+  font-family: 'Zen Dots', cursive;
+  text-shadow: 2px 0  crimson;
   /*border: 2px solid crimson;*/
-  font-family: 'Rubik Mono One', sans-serif ;
-  text-shadow: 2px 0  #FC0;
 }
   
 main {
-    width: 80%;
+ /* background-color: rgba(211, 211, 211, 0.6);*/
+  
     max-width: 1100px;
     margin-inline: auto;
-    border: 2px solid crimson;
     padding: 5px;
+    margin-top: 20px;
+    border-radius: 15px;
+    /*border: 2px solid crimson;*/
 }
 
 
@@ -41,12 +43,11 @@ main {
 .main-menu__list {
   display: flex;
   justify-content: space-evenly;
-  width: 80%;
   gap: 2rem;
-  /*border: 2px solid crimson;*/
   padding: 10px;
   box-shadow: 2px 4px crimson;
   border-radius: 10px;
+  /*border: 2px solid crimson;*/
   
 }
 
@@ -260,7 +261,7 @@ main {
 }
 
 .bg-text {
-  color: var(--main-color);
+  color: rgba(255, 255, 255, 0.8);
   font-family: 'Rubik Mono One', sans-serif;
   font-weight: bold;
 
@@ -279,21 +280,29 @@ main {
 
 .home{
   background-image: url("/mi-portfolio/assets/bg-portfolio.jpg");
+ 
+  
 }
 
 /*main*/
 
-.title-sobre-mi{
+.title-sobre-mi {
+  width: 90%;
+  color: black;
+  text-shadow: blue;
   margin-top: 10px;
   padding: 10px;
   text-align: center;
-  box-shadow: 2px 1px 2px 1px crimson;
+  box-shadow: 3px 1px 1px 1px crimson;
+  margin-inline: auto;
 }
 
 .main-sobre-mi{
   margin-top: 20px;
   padding: 5px;
-  border: 2px solid crimson;
+  
+  
+  /*border: 2px solid crimson;*/
 }
 
 .span01 {
@@ -304,5 +313,145 @@ main {
   padding: 2px;
 
 }
+
+.section-01{
+  background-color: rgba(211, 211, 211, 0.6);
+  width: 95%;
+  max-width: 1100px;
+  margin-inline: auto;
+  padding: 5px;
+  margin-top: 20px;
+  border-radius: 15px;
+  
+
+}
+
+.section-02{
+  background-color: rgba(211, 211, 211, 0.6);
+  width: 95%;
+  max-width: 1100px;
+  margin-inline: auto;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 6px 6px 1px 1px rgba(255, 0, 0, 0.4);
+
+}
+
+.title-misproyectos{
+  width: 90%;
+  color: black;
+  text-shadow: crimson;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 3px 1px 1px 1px rgba(0, 0, 255, 0.6);
+  margin-inline: auto;
+}
+
+.subtitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: left;
+
+}
+
+.title-contact {
+  width: 90%;
+  color: black;
+  text-shadow: crimson;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 3px 1px 1px 1px crimson;
+  margin-inline: auto;
+
+}
+
+
+.form{
+  width:80%;
+  margin-top: 20px;
+  margin-inline:auto ;
+  padding: 5px;
+  background-image: url(/mi-portfolio/assets/estrellas.jpg);
+  background-position:center;
+  background-size: cover;
+  border-radius:8px;
+  max-width:calc(100vw - 40px);
+  font-family:'Montserrat',sans-serif; 
+  
+}
+
+input{
+  color: white;
+  width:100%;
+  padding:10px;
+  box-sizing:border-box;
+  background:none;
+  outline:none;
+  resize:none;
+  border:0;
+  font-family:'Montserrat',sans-serif;
+  transition:all .3s;border-bottom:2px solid #bebed2
+}
+
+::placeholder{
+  color: white;
+}
+
+
+
+
+
+
+
+input:focus{
+  border-bottom:2px solid #78788c
+}
+
+.p-form:before{
+  content:attr(type);
+  display:block;
+  margin:28px 0 0;
+  font-size:14px;
+  color: white;
+}
+
+button{
+  padding:8px 12px;
+  margin:8px 0 0;
+  font-family:'Montserrat',sans-serif;
+  border:2px solid #78788c;
+  background:0;
+  color:white;
+  cursor:pointer;
+  transition:all .3s
+}
+
+button:hover{
+  background: rgba(220, 20, 60, 0.3);
+  color:#fff
+}
+
+.div01{
+  margin-inline: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+  max-width: 400px;
+  background-color: rgba(220, 20, 60, 0.3);
+  color:#fff;
+  padding:16px 4px 16px 0;
+  border-radius:6px;
+  font-size:13px;
+  text-align: center;
+ 
+}
+
+
+
 
 
