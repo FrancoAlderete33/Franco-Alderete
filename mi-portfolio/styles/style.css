@@ -42,10 +42,11 @@ main {
 
 .main-menu__list {
   display: flex;
+  width: 100%;
   justify-content: space-evenly;
   gap: 2rem;
   padding: 10px;
-  box-shadow: 2px 4px crimson;
+  box-shadow: 3px 4px crimson;
   border-radius: 10px;
   /*border: 2px solid crimson;*/
   
