@@ -48,11 +48,20 @@ section {
   box-shadow: 6px 6px 1px 1px rgba(255, 0, 0, 0.4);
 }
 
+/**navegador*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+}
 .main-menu__list {
   display: flex;
-  width: 100%;
+  flex-grow: 1;
   justify-content: space-evenly;
-  gap: 2rem;
+  gap: 1.5rem;
   padding: 10px;
   box-shadow: 3px 4px crimson;
   border-radius: 10px;
@@ -64,42 +73,26 @@ section {
   font-family: 'Rubik Mono One', sans-serif;
   text-shadow: #FC0 1px 0 10px;
 }
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 10px;
-}
 
-
-
-.bg-6{
-  background-color: rgba(0,0,0,0.0);
-  /*opacity: 50%;*/
-  width: 80%; 
-}
 
 /**background y refran*/
 
 .bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   text-align: center;
   padding: 10px;
   height: 100vh;
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  /* modo flexbox*/
-
   /* Blur efect
   filter: blur(8px);
-   Blur efect*/
-
+  Blur efect*/
 }
+
 
 .bg-text {
   color: rgba(255, 255, 255, 0.8);
@@ -121,8 +114,13 @@ section {
   background-image: url("/mi-portfolio/assets/bg-portfolio.jpg"); 
 }
 
-  /** Author (Glitch effect)*/
+/** Author (Glitch effect)*/
 
+.bg-6{
+  width: 80%; 
+  background-color: rgba(0,0,0,0.0);
+  /*opacity: 50%;*/
+}
 .glitch {
 display: flex;
 justify-content: center;
@@ -339,10 +337,8 @@ animation: noise-anim-2 3s infinite ease-in  alternate-reverse ;
   background-size: cover;
   border-radius:8px;
   max-width:calc(100vw - 40px);
-  font-family:'Montserrat',sans-serif; 
-  
+  font-family:'Montserrat',sans-serif;   
 }
-
 
 input{
   color: white;
@@ -402,6 +398,8 @@ button:hover{
   font-size:13px;
   text-align: center;
 }
+
+
 
 
 
