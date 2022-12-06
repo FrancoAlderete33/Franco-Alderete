@@ -1,43 +1,51 @@
-/*Generales*/
+/**Generales*/
+
 body {
   background: rgb(2,2,3);
   background: linear-gradient(180deg, rgba(2,2,3,1) 79%, rgba(13,176,219,0.927608543417367) 100%);
   letter-spacing: 1.5px;
-  /*border: 2px solid crimson;*/
 }
-
 
 nav {
   font-size: 60%;
   background-color: rgba(0, 0, 0, 0.925); 
 }
 
- h2, h3 {
+ h2 {
   font-family: 'Zen Dots', cursive;
   text-shadow: 2px 0  crimson;
-  /*border: 2px solid crimson;*/
+  width: 90%;
+  color: black;
+  text-shadow: crimson;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-inline: auto;
+}
+
+h3 {
+  font-family: 'Zen Dots', cursive;
+  text-shadow: 2px 0  crimson;
 }
   
 main {
- /* background-color: rgba(211, 211, 211, 0.6);*/
-  
     max-width: 1100px;
     margin-inline: auto;
     padding: 5px;
     margin-top: 20px;
     border-radius: 15px;
-    /*border: 2px solid crimson;*/
 }
 
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 10px;
- 
-  
+section {
+  background-color: rgba(211, 211, 211, 0.6);
+  width: 95%;
+  max-width: 1100px;
+  margin-inline: auto;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 6px 6px 1px 1px rgba(255, 0, 0, 0.4);
 }
 
 .main-menu__list {
@@ -48,8 +56,6 @@ main {
   padding: 10px;
   box-shadow: 3px 4px crimson;
   border-radius: 10px;
-  /*border: 2px solid crimson;*/
-  
 }
 
 .main-menu__link{
@@ -58,187 +64,23 @@ main {
   font-family: 'Rubik Mono One', sans-serif;
   text-shadow: #FC0 1px 0 10px;
 }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+}
 
-/* Author */
+
 
 .bg-6{
   background-color: rgba(0,0,0,0.0);
   /*opacity: 50%;*/
-  width: 80%;
-  
+  width: 80%; 
 }
 
-.glitch {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 20px;
-  position: relative;
-  margin: 0 auto;
-  font-family: 'Rubik Mono One', sans-serif;
-
- 
-}
-
-.glitch:after {
-  content: attr(data-text);
-  position: absolute;
-  left: 16px;
-  text-shadow: 4px 0 rgba(255, 0, 0, 0.6);
-  top: 0;
-  color: rgba(255, 255, 255, 0.6);
-  background: rgba(0,0,0,0.0);
-  overflow: hidden;
-  clip: rect(0, 900px, 0, 0);
-  animation: noise-anim 2s infinite ease-in alternate-reverse ;
-}
-
-.glitch:before {
-  content: attr(data-text);
-  position: absolute;
-  left: 8px;
-  text-shadow: 3px 0  rgba(255, 204, 0, 0.6);
-  top: 0;
-  color: rgba(255, 255, 255, 0.6);
-  background: rgba(0,0,0,0.0);
-  overflow: hidden;
-  clip: rect(0, 900px, 0, 0);
-  animation: noise-anim-2 3s infinite ease-in  alternate-reverse ;
-}
-
-@keyframes noise-anim {
-  0% {
-    clip: rect(51px, 9999px, 28px, 0);
-  }
-  5% {
-    clip: rect(70px, 9999px, 19px, 0);
-  }
-  10% {
-    clip: rect(92px, 9999px, 13px, 0);
-  }
-  15% {
-    clip: rect(85px, 9999px, 49px, 0);
-  }
-  20% {
-    clip: rect(45px, 9999px, 56px, 0);
-  }
-  25% {
-    clip: rect(26px, 9999px, 31px, 0);
-  }
-  30% {
-    clip: rect(62px, 9999px, 73px, 0);
-  }
-  35% {
-    clip: rect(34px, 9999px, 11px, 0);
-  }
-  40% {
-    clip: rect(26px, 9999px, 61px, 0);
-  }
-  45% {
-    clip: rect(34px, 9999px, 71px, 0);
-  }
-  50% {
-    clip: rect(35px, 9999px, 69px, 0);
-  }
-  55% {
-    clip: rect(92px, 9999px, 81px, 0);
-  }
-  60% {
-    clip: rect(26px, 9999px, 85px, 0);
-  }
-  65% {
-    clip: rect(2px, 9999px, 68px, 0);
-  }
-  70% {
-    clip: rect(54px, 9999px, 79px, 0);
-  }
-  75% {
-    clip: rect(35px, 9999px, 85px, 0);
-  }
-  80% {
-    clip: rect(70px, 9999px, 60px, 0);
-  }
-  85% {
-    clip: rect(32px, 9999px, 26px, 0);
-  }
-  90% {
-    clip: rect(94px, 9999px, 53px, 0);
-  }
-  95% {
-    clip: rect(99px, 9999px, 92px, 0);
-  }
-  100% {
-    clip: rect(42px, 9999px, 27px, 0);
-  }
-}
-
-@keyframes noise-anim-2 {
-  0% {
-    clip: rect(21px, 9999px, 49px, 0);
-  }
-  5% {
-    clip: rect(27px, 9999px, 52px, 0);
-  }
-  10% {
-    clip: rect(21px, 9999px, 70px, 0);
-  }
-  15% {
-    clip: rect(65px, 9999px, 25px, 0);
-  }
-  20% {
-    clip: rect(24px, 9999px, 10px, 0);
-  }
-  25% {
-    clip: rect(61px, 9999px, 64px, 0);
-  }
-  30% {
-    clip: rect(34px, 9999px, 47px, 0);
-  }
-  35% {
-    clip: rect(46px, 9999px, 93px, 0);
-  }
-  40% {
-    clip: rect(46px, 9999px, 9px, 0);
-  }
-  45% {
-    clip: rect(67px, 9999px, 36px, 0);
-  }
-  50% {
-    clip: rect(72px, 9999px, 20px, 0);
-  }
-  55% {
-    clip: rect(79px, 9999px, 26px, 0);
-  }
-  60% {
-    clip: rect(13px, 9999px, 87px, 0);
-  }
-  65% {
-    clip: rect(10px, 9999px, 25px, 0);
-  }
-  70% {
-    clip: rect(85px, 9999px, 11px, 0);
-  }
-  75% {
-    clip: rect(94px, 9999px, 35px, 0);
-  }
-  80% {
-    clip: rect(50px, 9999px, 86px, 0);
-  }
-  85% {
-    clip: rect(74px, 9999px, 67px, 0);
-  }
-  90% {
-    clip: rect(1px, 9999px, 40px, 0);
-  }
-  95% {
-    clip: rect(3px, 9999px, 48px, 0);
-  }
-  100% {
-    clip: rect(90px, 9999px, 23px, 0);
-  }
-}
-/*background y refran*/
+/**background y refran*/
 
 .bg {
   text-align: center;
@@ -247,8 +89,6 @@ main {
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
-
-  /* modo flexbox*/
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -265,7 +105,6 @@ main {
   color: rgba(255, 255, 255, 0.8);
   font-family: 'Rubik Mono One', sans-serif;
   font-weight: bold;
-
   position: absolute;
   top:35%;
   left: 50%;
@@ -276,34 +115,192 @@ main {
   text-align: center;
   opacity: 85%;
   text-shadow: #FC0 1px 0 10px;
-  
 }
 
 .home{
-  background-image: url("/mi-portfolio/assets/bg-portfolio.jpg");
- 
-  
+  background-image: url("/mi-portfolio/assets/bg-portfolio.jpg"); 
 }
 
-/*main*/
+  /** Author (Glitch effect)*/
 
-.title-sobre-mi {
-  width: 90%;
-  color: black;
-  text-shadow: blue;
-  margin-top: 10px;
-  padding: 10px;
-  text-align: center;
-  box-shadow: 3px 1px 1px 1px crimson;
-  margin-inline: auto;
+.glitch {
+display: flex;
+justify-content: center;
+align-items: center;
+color: rgba(255, 255, 255, 0.6);
+font-size: 20px;
+position: relative;
+margin: 0 auto;
+font-family: 'Rubik Mono One', sans-serif;
+}
+
+.glitch:after {
+content: attr(data-text);
+position: absolute;
+left: 16px;
+text-shadow: 4px 0 rgba(255, 0, 0, 0.6);
+top: 0;
+color: rgba(255, 255, 255, 0.6);
+background: rgba(0,0,0,0.0);
+overflow: hidden;
+clip: rect(0, 900px, 0, 0);
+animation: noise-anim 2s infinite ease-in alternate-reverse ;
+}
+
+.glitch:before {
+content: attr(data-text);
+position: absolute;
+left: 8px;
+text-shadow: 3px 0  rgba(255, 204, 0, 0.6);
+top: 0;
+color: rgba(255, 255, 255, 0.6);
+background: rgba(0,0,0,0.0);
+overflow: hidden;
+clip: rect(0, 900px, 0, 0);
+animation: noise-anim-2 3s infinite ease-in  alternate-reverse ;
+}
+
+@keyframes noise-anim {
+0% {
+ clip: rect(51px, 9999px, 28px, 0);
+}
+5% {
+ clip: rect(70px, 9999px, 19px, 0);
+}
+10% {
+ clip: rect(92px, 9999px, 13px, 0);
+}
+15% {
+ clip: rect(85px, 9999px, 49px, 0);
+}
+20% {
+ clip: rect(45px, 9999px, 56px, 0);
+}
+25% {
+ clip: rect(26px, 9999px, 31px, 0);
+}
+30% {
+ clip: rect(62px, 9999px, 73px, 0);
+}
+35% {
+ clip: rect(34px, 9999px, 11px, 0);
+}
+40% {
+ clip: rect(26px, 9999px, 61px, 0);
+}
+45% {
+ clip: rect(34px, 9999px, 71px, 0);
+}
+50% {
+ clip: rect(35px, 9999px, 69px, 0);
+}
+55% {
+ clip: rect(92px, 9999px, 81px, 0);
+}
+60% {
+ clip: rect(26px, 9999px, 85px, 0);
+}
+65% {
+ clip: rect(2px, 9999px, 68px, 0);
+}
+70% {
+ clip: rect(54px, 9999px, 79px, 0);
+}
+75% {
+ clip: rect(35px, 9999px, 85px, 0);
+}
+80% {
+ clip: rect(70px, 9999px, 60px, 0);
+}
+85% {
+ clip: rect(32px, 9999px, 26px, 0);
+}
+90% {
+ clip: rect(94px, 9999px, 53px, 0);
+}
+95% {
+ clip: rect(99px, 9999px, 92px, 0);
+}
+100% {
+ clip: rect(42px, 9999px, 27px, 0);
+}
+}
+
+@keyframes noise-anim-2 {
+0% {
+ clip: rect(21px, 9999px, 49px, 0);
+}
+5% {
+ clip: rect(27px, 9999px, 52px, 0);
+}
+10% {
+ clip: rect(21px, 9999px, 70px, 0);
+}
+15% {
+ clip: rect(65px, 9999px, 25px, 0);
+}
+20% {
+ clip: rect(24px, 9999px, 10px, 0);
+}
+25% {
+ clip: rect(61px, 9999px, 64px, 0);
+}
+30% {
+ clip: rect(34px, 9999px, 47px, 0);
+}
+35% {
+ clip: rect(46px, 9999px, 93px, 0);
+}
+40% {
+ clip: rect(46px, 9999px, 9px, 0);
+}
+45% {
+ clip: rect(67px, 9999px, 36px, 0);
+}
+50% {
+ clip: rect(72px, 9999px, 20px, 0);
+}
+55% {
+ clip: rect(79px, 9999px, 26px, 0);
+}
+60% {
+ clip: rect(13px, 9999px, 87px, 0);
+}
+65% {
+ clip: rect(10px, 9999px, 25px, 0);
+}
+70% {
+ clip: rect(85px, 9999px, 11px, 0);
+}
+75% {
+ clip: rect(94px, 9999px, 35px, 0);
+}
+80% {
+ clip: rect(50px, 9999px, 86px, 0);
+}
+85% {
+ clip: rect(74px, 9999px, 67px, 0);
+}
+90% {
+ clip: rect(1px, 9999px, 40px, 0);
+}
+95% {
+ clip: rect(3px, 9999px, 48px, 0);
+}
+100% {
+ clip: rect(90px, 9999px, 23px, 0);
+}
+}
+
+/**main*/
+
+.title-sobre-mi { 
+ box-shadow: 3px 1px 1px 1px crimson;
 }
 
 .main-sobre-mi{
   margin-top: 20px;
   padding: 5px;
-  
-  
-  /*border: 2px solid crimson;*/
 }
 
 .span01 {
@@ -312,43 +309,10 @@ main {
   background: linear-gradient(to left,rgb(40,116,252),#fe026f);
   border-radius: 10px 10px ;
   padding: 2px;
-
-}
-
-.section-01{
-  background-color: rgba(211, 211, 211, 0.6);
-  width: 95%;
-  max-width: 1100px;
-  margin-inline: auto;
-  padding: 5px;
-  margin-top: 20px;
-  border-radius: 15px;
-  
-
-}
-
-.section-02{
-  background-color: rgba(211, 211, 211, 0.6);
-  width: 95%;
-  max-width: 1100px;
-  margin-inline: auto;
-  padding: 5px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 15px;
-  box-shadow: 6px 6px 1px 1px rgba(255, 0, 0, 0.4);
-
 }
 
 .title-misproyectos{
-  width: 90%;
-  color: black;
-  text-shadow: crimson;
-  margin-top: 10px;
-  padding: 10px;
-  text-align: center;
   box-shadow: 3px 1px 1px 1px rgba(0, 0, 255, 0.6);
-  margin-inline: auto;
 }
 
 .subtitle {
@@ -356,24 +320,17 @@ main {
   margin-bottom: 20px;
   padding: 10px;
   text-align: left;
-
 }
 
 .title-contact {
-  width: 90%;
-  color: black;
-  text-shadow: crimson;
-  margin-top: 10px;
-  padding: 10px;
-  text-align: center;
   box-shadow: 3px 1px 1px 1px crimson;
-  margin-inline: auto;
-
 }
 
 
+/** Forumulario*/
+
 .form{
-  width:80%;
+  width:90%;
   margin-top: 20px;
   margin-inline:auto ;
   padding: 5px;
@@ -385,6 +342,7 @@ main {
   font-family:'Montserrat',sans-serif; 
   
 }
+
 
 input{
   color: white;
@@ -402,12 +360,6 @@ input{
 ::placeholder{
   color: white;
 }
-
-
-
-
-
-
 
 input:focus{
   border-bottom:2px solid #78788c
@@ -449,7 +401,6 @@ button:hover{
   border-radius:6px;
   font-size:13px;
   text-align: center;
- 
 }
 
 
